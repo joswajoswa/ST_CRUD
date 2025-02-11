@@ -39,7 +39,7 @@ public class InformationSystem extends javax.swing.JFrame {
         int CC;
         
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost/studentinfo","root","");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/studentinfo","root","root");
             pst = con.prepareStatement("SELECT *FROM info");
             ResultSet Rs = pst.executeQuery();
             ResultSetMetaData RSMD = Rs.getMetaData();
